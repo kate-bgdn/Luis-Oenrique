@@ -88,6 +88,27 @@
     }
 }
 
+h3{
+    font:{
+        family: 'Asap-Bold', sans-serif;
+        size: 46px;
+    }
+    color: #7a7a7a;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 70px;
+    &:before{
+        display: block;
+        content: '';
+        border-top: 4px solid #7a7a7a;
+        width: 60px;
+        margin: 0 auto 20px;
+    }
+    @include max-screen(600px){
+        font-size: 40px;
+    }
+}
 
 .pd-110{
     padding: 110px 0;
@@ -283,6 +304,25 @@ header{
                     @include max-screen(768px){
                         margin-top: 50px;
                     }
+                }
+            }
+        }
+    }
+}
+
+.services{
+    .container{
+        .row{
+            text-align: center;
+            div{
+                p{
+                    padding: 15px;
+                    margin-bottom: 70px;
+                    font:{
+                        family: 'Asap-Medium', sans-serif;
+                        size: 24px;
+                    }
+                    color: #4d4d4d;
                 }
             }
         }

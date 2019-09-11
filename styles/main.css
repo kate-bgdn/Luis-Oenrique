@@ -40,6 +40,24 @@
   src: url("fonts/asap/Asap-Italic.eot?#iefix") format("embedded-opentype"), url("fonts/asap/Asap-Italic.woff2") format("woff2"), url("fonts/asap/Asap-Italic.woff") format("woff"), url("fonts/asap/Asap-Italic.ttf") format("truetype"), url("fonts/asap/Asap-Italic.svg#Asap-Italic") format("svg");
   font-weight: normal;
   font-style: italic; }
+h3 {
+  font-family: 'Asap-Bold', sans-serif;
+  font-size: 46px;
+  color: #7a7a7a;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-bottom: 70px; }
+  h3:before {
+    display: block;
+    content: '';
+    border-top: 4px solid #7a7a7a;
+    width: 60px;
+    margin: 0 auto 20px; }
+  @media screen and (max-width: 600px) {
+    h3 {
+      font-size: 40px; } }
+
 .pd-110 {
   padding: 110px 0; }
 
@@ -181,5 +199,14 @@ header {
     @media screen and (max-width: 768px) {
       .content .container .row div img {
         margin-top: 50px; } }
+
+.services .container .row {
+  text-align: center; }
+  .services .container .row div p {
+    padding: 15px;
+    margin-bottom: 70px;
+    font-family: 'Asap-Medium', sans-serif;
+    font-size: 24px;
+    color: #4d4d4d; }
 
 /*# sourceMappingURL=main.css.map */
