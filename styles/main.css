@@ -252,6 +252,28 @@ header {
       font-family: Asap-Regular;
       font-size: 15px; }
 
+.funfact {
+  margin-bottom: 150px; }
+  .funfact .container .row div img {
+    margin-bottom: 30px; }
+  .funfact .container .row div h5 {
+    font-family: Asap-Medium;
+    font-size: 30px;
+    color: #212121;
+    text-align: center;
+    margin: 0; }
+  .funfact .container .row div p {
+    font-family: Asap-Regular;
+    font-size: 22px;
+    color: #212121;
+    text-align: center;
+    text-transform: uppercase; }
+  @media screen and (max-width: 768px) {
+    .funfact .container .row div h5 {
+      font-size: 22px; }
+    .funfact .container .row div p {
+      font-size: 14px; } }
+
 .btn-white {
   font-family: 'Asap-Medium', sans-serif;
   font-size: 16px;

@@ -401,6 +401,46 @@ header{
     }
 }
 
+.funfact{
+    margin-bottom: 150px;
+    .container{
+        .row{
+            div{
+                img{
+                    margin-bottom: 30px;
+                }
+                h5{
+                    font:{
+                        family: Asap-Medium;
+                        size: 30px;
+                    }
+                    color: #212121;
+                    text-align: center;
+                    margin: 0;
+                }
+                p{
+                    font:{
+                        family: Asap-Regular;
+                        size: 22px;
+                    }
+                    color: #212121;
+                    text-align: center;
+                    text-transform: uppercase;
+                }
+                @include max-screen(768px){
+                    h5{
+                        font-size: 22px;
+                    }
+                    p{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
 
 
 
