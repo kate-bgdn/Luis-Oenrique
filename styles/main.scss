@@ -1,0 +1,166 @@
+@font-face {
+    font-family: 'Lato-Light';
+    src: url('fonts/lato/Lato-Light.eot');
+    src: url('fonts/lato/Lato-Light.eot?#iefix') format('embedded-opentype'),
+    url('fonts/lato/Lato-Light.woff2') format('woff2'),
+    url('fonts/lato/Lato-Light.woff') format('woff'),
+    url('fonts/lato/Lato-Light.ttf') format('truetype'),
+    url('fonts/lato/Lato-Light.svg#Lato-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato-Regular';
+    src: url('fonts/lato/Lato-Regular.eot');
+    src: url('fonts/lato/Lato-Regular.eot?#iefix') format('embedded-opentype'),
+    url('fonts/lato/Lato-Regular.woff2') format('woff2'),
+    url('fonts/lato/Lato-Regular.woff') format('woff'),
+    url('fonts/lato/Lato-Regular.ttf') format('truetype'),
+    url('fonts/lato/Lato-Regular.svg#Lato-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('fonts/montserrat/Montserrat-Regular.eot');
+    src: url('fonts/montserrat/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+    url('fonts/montserrat/Montserrat-Regular.woff2') format('woff2'),
+    url('fonts/montserrat/Montserrat-Regular.woff') format('woff'),
+    url('fonts/montserrat/Montserrat-Regular.ttf') format('truetype'),
+    url('fonts/montserrat/Montserrat-Regular.svg#Montserrat-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Asap-Bold';
+    src: url('fonts/asap/Asap-Bold.eot');
+    src: url('fonts/asap/Asap-Bold.eot?#iefix') format('embedded-opentype'),
+    url('fonts/asap/Asap-Bold.woff2') format('woff2'),
+    url('fonts/asap/Asap-Bold.woff') format('woff'),
+    url('fonts/asap/Asap-Bold.ttf') format('truetype'),
+    url('fonts/asap/Asap-Bold.svg#Asap-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Asap-Regular';
+    src: url('fonts/asap/Asap-Regular.eot');
+    src: url('fonts/asap/Asap-Regular.eot?#iefix') format('embedded-opentype'),
+    url('fonts/asap/Asap-Regular.woff2') format('woff2'),
+    url('fonts/asap/Asap-Regular.woff') format('woff'),
+    url('fonts/asap/Asap-Regular.ttf') format('truetype'),
+    url('fonts/asap/Asap-Regular.svg#Asap-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Asap-Medium';
+    src: url('fonts/asap/Asap-Medium.eot');
+    src: url('fonts/asap/Asap-Medium.eot?#iefix') format('embedded-opentype'),
+    url('fonts/asap/Asap-Medium.woff2') format('woff2'),
+    url('fonts/asap/Asap-Medium.woff') format('woff'),
+    url('fonts/asap/Asap-Medium.ttf') format('truetype'),
+    url('fonts/asap/Asap-Medium.svg#Asap-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Asap-Italic';
+    src: url('fonts/asap/Asap-Italic.eot');
+    src: url('fonts/asap/Asap-Italic.eot?#iefix') format('embedded-opentype'),
+    url('fonts/asap/Asap-Italic.woff2') format('woff2'),
+    url('fonts/asap/Asap-Italic.woff') format('woff'),
+    url('fonts/asap/Asap-Italic.ttf') format('truetype'),
+    url('fonts/asap/Asap-Italic.svg#Asap-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@mixin max-screen($res) {
+    @media screen and (max-width: $res) {
+        @content;
+    }
+}
+
+
+
+.pd-110{
+    padding: 110px 0;
+}
+
+.pd-50{
+    padding: 50px 0;
+}
+
+.pd-70{
+    padding: 70px 0;
+}
+
+.bg{
+    background-color: #f6f6f6;
+}
+
+header{
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    @include max-screen(768px){
+        position: relative;
+    }
+    .container-fluid{
+        nav{
+            a{
+                text-align: center;
+                text-decoration: none;
+                color: inherit;
+                span{
+                    font-family: 'Lato-Light', sans-serif;
+                    font-size: 14px;
+                    display: block;
+                    color: #000000;
+                    &:after{
+                        content: 'UX/UI EXPERT';
+                        display: block;
+                        font-family: 'Lato-Regular', sans-serif;
+                        font-size: 4px;
+                    }
+                }
+            }
+            button.navbar-toggler{
+                border: solid 1px black;
+                span{
+                    display: block;
+                    margin: 7px 0;
+                    width: 30px;
+                    height: 1px;
+                    background-color: black;
+                }
+            }
+        }
+        div{
+            ul{
+                li{
+                    margin: 0 15px;
+                    font-family: 'Asap-Regular', sans-serif;
+                    font-size: 16px;
+                    border-bottom: solid 2px transparent;
+                    text-transform: uppercase;
+                    transition: 0.3s;
+                    &:hover{
+                        border-bottom: solid 2px #878787;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
