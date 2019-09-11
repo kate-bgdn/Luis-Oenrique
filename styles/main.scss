@@ -354,6 +354,108 @@ header{
     }
 }
 
+.carousel{
+    .container{
+        .row{
+            .single-slide{
+                padding: 0 6.6vw;
+                border: 1px solid #000000;
+                box-sizing: border-box;
+                @include max-screen(1024px){
+                    padding: 0 15px;
+                }
+                .item{
+                    outline: none;
+                    h4{
+                        text-transform: uppercase;
+                        color: #212121;
+                        margin-bottom: -5px;
+                        text-align: left;
+                        font:{
+                            family: Asap-Medium;
+                            size: 30px;
+                        }
+                    }
+                    span{
+                        color: #212121;
+                        text-align: left;
+                        font:{
+                            family: Asap-Italic;
+                            size: 12px;
+                        }
+                    }
+                    p{
+                        margin-top: 20px;
+                        text-transform: uppercase;
+                        text-align: left;
+                        color: #212121;
+                        font:{
+                            family: Asap-Regular;
+                            size: 15px;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+
+
+
+.btn-white{
+    font: {
+        family: 'Asap-Medium', sans-serif;
+        size: 16px;
+    }
+    color: #4d4d4d;
+    text-transform: uppercase;
+    padding: 10px;
+    margin-right: 20px;
+    background-color: white;
+    border-radius: 0;
+    width: 220px;
+    margin-bottom: 20px;
+    border: none;
+    transition: 0.3s;
+    &:hover{
+        -webkit-box-shadow: 1px 1px 5px 2px #dbdbdb;
+        box-shadow: 3px 3px 8px 5px #dbdbdb;
+    }
+}
+
+.slick-dots{
+    bottom: 10px;
+    width: 80%;
+    li{
+        border: 1px solid #000000;
+        background: white;
+        box-shadow: none;
+        width: 16px;
+        height: 16px;
+        button{
+            color: transparent;
+            background: transparent;
+            opacity: 0;
+            :before{
+
+                color: transparent;
+                background: transparent;
+            }
+    }
+
+    }
+    .slick-active{
+        background: black;
+        opacity: 1;
+        box-shadow: none;
+    }
+
+}
+
+
+
 
 
 
